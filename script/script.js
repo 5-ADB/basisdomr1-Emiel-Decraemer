@@ -20,3 +20,11 @@ const groenten = [
     prijs: 0.7,
   },
 ];
+
+const lijst = document.querySelector("#lijst")
+
+groenten.forEach(groente => {
+  const nieuweGroente = document.createElement("p")
+  nieuweGroente.innerHTML = groente.naam
+  lijst.appendChild(nieuweGroente)
+});
